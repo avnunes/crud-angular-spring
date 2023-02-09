@@ -1,10 +1,9 @@
-# REST API with Spring Boot and Angular
+# REST API com Spring Boot e Angular
 
 
-CRUD Angular + Spring demonstrating Has-Many relationship, with tests.
+CRUD Angular + Spring.
 
-This API is to showcase, specially for beginners, what a basic CRUD API that's close to be Production ready looks like.
-## 💻 Tecnologies
+## 💻 Tecnologias
 
    - Java 17
    - Spring Boot 3 (Spring 6)
@@ -21,7 +20,7 @@ This API is to showcase, specially for beginners, what a basic CRUD API that's c
    - Java Extensions [link](https://marketplace.visualstudio.com/items?itemName=loiane.java-spring-extension-pack)
    - Angular Extensions [link](https://marketplace.visualstudio.com/items?itemName=loiane.angular-extension-pack)
 
-## Some functionalies available in the API
+## Algumas funcionalidades disponíveis na API:
 
    - ✅ Java model class with validation
    - ✅ JPA repository
@@ -34,15 +33,8 @@ This API is to showcase, specially for beginners, what a basic CRUD API that's c
    - ✅ Test coverage for tests
    - ✅ Spring Docs - Swagger (https://springdoc.org/v2/)
 
-## Not implemented (maybe in a future version)
 
-   - Security (Authorization and Authentication)
-   - Caching
-   - Data Compression
-   - Throttling e Rate-limiting
-   - Profiling the app
-
-## Some functionalies available in the Front-end
+## Algumas funcionalidades disponíveis no Front-end:
 
    - ✅ Angular Material components
    - ✅ List of all courses
@@ -53,24 +45,25 @@ This API is to showcase, specially for beginners, what a basic CRUD API that's c
    - ✅ Presentational x Smart Components
     [In Progress] Unit and Integration tests for components, services, pipes, guards
 
-## ❗️Excuting the code locally
-Executing the back-end
+## ❗️Executando o código localmente
+### Executando o back-end:
 
-You need to have Java and Maven installed and configured locally.
+Java e o Maven instalados e configurados localmente.
 
-Open the crud-spring project in your favorite IDE as a Maven project and execute it as Spring Boot application.
-Executing the front-end
+Abra o projeto crud-spring em seu IDE com um projeto Maven e execute-o com Spring Boot.
 
-You need to have Node.js / NPM installed locally.
+### Executando o front-end:
 
-   ## Install all the required depencencies:
+Precisa ter o Node.js/NPM instalado localmente.
+
+   ## Instale todas as dependências necessárias:
 
 npm install
 
-   ## Execute the project:
+   ## Executar o projeto:
 
 npm run start
 
-This command will run the Angular project with a proxy to the Java server, without requiring CORS.
+Este comando executará o projeto Angular com um proxy para o servidor Java, sem a necessidade de CORS.
 
-Open your browser and access http://localhost:4200 (Angular default port).
+Abra o navegador e acesse http://localhost:4200 (Porta padrão angular).
