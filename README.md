@@ -10,7 +10,7 @@ CRUD Angular + Spring.
    - JPA + Hibernate
    - JUnit 5 + Mockito (back-end tests)
    - Maven
-   - Angular v15
+   - Angular v17
    - Angular Material
    - Karma + Jasmine (front-end tests)
 
@@ -36,34 +36,51 @@ CRUD Angular + Spring.
 
 ## Algumas funcionalidades disponíveis no Front-end:
 
+   - ✅ Angular Standalone components (Angular v16+)
    - ✅ Angular Material components
-   - ✅ List of all courses
+   - ✅ List of all courses with pagination
    - ✅ Form to update/create courses with lessons (has-many - FormArray)
-  - - [ ] Form async validation for duplicated courses and lessons
-  - - [ ] View only screen
+   - ✅ View only screen
    - ✅ TypedForms (Angular v14+)
    - ✅ Presentational x Smart Components
-    [In Progress] Unit and Integration tests for components, services, pipes, guards
+   - 🚧 Unit and Integration tests for components, services, pipes, guards
 
 ## ❗️Executando o código localmente
+
 ### Executando o back-end:
 
 Java e o Maven instalados e configurados localmente.
 
-Abra o projeto crud-spring em seu IDE com um projeto Maven e execute-o com Spring Boot.
+Abra o projeto `crud-spring` em seu IDE com um projeto Maven e execute-o com Spring Boot.
 
 ### Executando o front-end:
 
 Precisa ter o Node.js/NPM instalado localmente.
 
-   ## Instale todas as dependências necessárias:
+1. Instale todas as dependências necessárias:
 
+```
 npm install
+```
 
-   ## Executar o projeto:
+2. Executar o projeto:
 
+```
 npm run start
+```
 
 Este comando executará o projeto Angular com um proxy para o servidor Java, sem a necessidade de CORS.
 
-Abra o navegador e acesse http://localhost:4200 (Porta padrão angular).
+Abra o navegador e acesse **http://localhost:4200** (Porta padrão angular).
+
+#### Upgrading Angular
+
+```
+ng update
+```
+
+Próximo passo
+
+```
+ng update @angular/cli @angular/core @angular/cdk @angular/material @angular/youtube-player --force
+```
